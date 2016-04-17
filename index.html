@@ -1,12 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+    <title>Nerd's</title>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<body>
+    <header class="main-heder">
+        <div class="container">
+            <div class="index-logo">
+                <img src="img/index-logo.png" alt="Nerd's" width="155" height="70">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Студия 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Клиенты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Магазин
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-cart">
+                <a class="cart" href="#">Корзина</a>
+            </div>
 
-  </body>
+            <div class="slider">
+                <div class="slide-one">
+                    <h1>
+                    Долго, дорого, скурпулезно.
+                </h1>
+                    <p>
+                        Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                    </p>
+                    <a class="btn" href="#">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="slider">
+                    <input type="radio" id="btn-1" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+                    <input type="radio" id="btn-3" name="toggle">
+                    <div class="slider-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="container">
+        <div class="services">
+            <div class="block">
+                <img src="img/websites.png" alt="websites" width="240" height="128">
+                <h2>
+                    Веб-сайты
+                </h2>
+                <p>
+                    Мир никогда не будет преждним после того как увидит ваш сайт!
+                </p>
+                <a class="btn" href="#">
+                    Заказать
+                </a>
+            </div>
+            <div class="block">
+                <img src="img/apps.png" alt="apps" width="240" height="128">
+                <h2>
+                    Приложения
+                </h2>
+                <p>
+                    Покорите топ-10 приложений в AppStrore и Google Play
+                </p>
+                <a class="btn" href="#">
+                    Заказать
+                </a>
+            </div>
+            <div class="block">
+                <img src="img/presentations.png" alt="presentations" width="240" height="128">
+                <h2>
+                    Презентации
+                </h2>
+                <p>
+                    Вы даже не подозреваете, насколько вы изумительны!
+                </p>
+                <a class="btn" href="#">
+                    Заказать
+                </a>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-left">
+                <b>
+                    Мы - маленькая, но гордая дизайн-студия из Краснодара.
+                </b>
+                <p>
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+                </p>
+                <h3>
+                    Выполняем заказы на разработку:
+                </h3>
+                <ul>
+                    <li>
+                        Веб-сайтов любой сложности
+                    </li>
+                    <li>
+                        Мобильных приложений для iOS и Android
+                    </li>
+                    <li>
+                        Слайдшоу и видео для корпоративных презентаций
+                    </li>
+                </ul>
+            </div>
+            <div class="about-right">
+                <img src="img/logo.png" alt="logo" width="180" height="75">
+                <p class="since">
+                    Since 2004
+                </p>
+                <h3>
+                    Как мы работаем?          
+                </h3>
+                <ul>
+                    <li>
+                        С самотдачей на 146%
+                    </li>
+                    <li>
+                        Соблюдая сроки на 100%
+                    </li>
+                    <li>
+                        По предоплате 50%
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#"><img src="img/glukhanco.png" alt="glukhanco" width="250" height="110"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/htmlacademy.png" alt="htmlacademy" width="250" height="110"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/borodinski.png" alt="borodinski" width="250" height="110"></a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="map">
+            <div class="container">
+                <div class="feedback">
+                    <b>
+                           Nerds Design Studio
+                       </b>
+                    <p>
+                        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    </p>
+                    <p>
+                        тел. +7(812) 275-75-75
+                    </p>
+                    <a class="btn" href="#">
+                           Напишите нам
+                       </a>
+                </div>
+                <div class="flag">
+                    <img src="img/flag.png" alt="we are here" width="230" height="190">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="social">
+                <a>
+                    <img src="img/icon-vk.png" alt="" width="61" height="61">
+                </a>
+                <a>
+                    <img src="img/icon-facebook.png" alt="" width="61" height="61">
+                </a>
+                <a>
+                    <img src="img/icon-instagram.png" alt="" width="61" height="61">
+                </a>
+            </div>
+            <div class="discounts">
+                <h2>
+               Давайте дружить, это выгодно!
+           </h2>
+                <p>
+                    Скидка 10% для друзей из социальных сетей.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
