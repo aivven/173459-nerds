@@ -4,55 +4,56 @@
 <head>
     <meta charset="utf-8">
     <title>Nerd's</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-heder">
+    <header class="main-header">
         <div class="container">
             <div class="index-logo">
-                <a href="#">
-                    <img src="img/index-logo.png" alt="Nerd's" width="155" height="70">
-                </a>
+                <img src="img/index-logo.png" alt="Nerd's" width="139" height="56">
             </div>
-            <nav class="menu">
-                <ul>
+            <nav class="main-navigation">
+                <ul class="navigation-ul">
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Студия 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Клиенты
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Магазин
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Контакты
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="btn-cart">
-                <a class="cart" href="#">Корзина</a>
+                <a class="navigation-link" href="#">Корзина</a>
             </div>
-        </div>
-        <div class="topic">
-            <h1>
-                Добро пожаловать в магазин готовых макетов
-            </h1>
+            <div class="header-topic">
+                <h1>
+                    Добро пожаловать в магазин готовых макетов
+                </h1>
+            </div>
         </div>
     </header>
     <main class="container">
         <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
                 <legend>
+                    <h2>
                     Стоимость:
+                    </h2>
                 </legend>
                 <div class="range-filter">
                     <div class="range-controls">
@@ -67,15 +68,16 @@
                     </div>
                     <div class="price-controls">
                         от
-                        <input class="min-price" type="text" value="0">
-                        до
+                        <input class="min-price" type="text" value="0"> до
                         <input class="max-price" type="text" value="15000">
                     </div>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>
+                    <h2>
                     Сетка:
+                    </h2>
                 </legend>
                 <label>
                     <input type="radio" name="btn-grid" id="adaptive" checked> Адаптивная
@@ -89,7 +91,9 @@
             </fieldset>
             <fieldset>
                 <legend>
-                    Особенности:
+                    <h2>
+                       Особенности:
+                    </h2>
                 </legend>
                 <label>
                     <input type="checkbox" name="btn-features" id="slider" checked> Слайдер
@@ -107,10 +111,10 @@
                     <input type="checkbox" name="btn-features" id="cart"> Корзина
                 </label>
             </fieldset>
-            <button class="btn" type="submit">Показать</button>
+            <button class="filter-btn" type="submit">Показать</button>
         </form>
         <div class="template">
-            <div class="filters">
+            <div class="template-filters">
                 <span>
                     Сортировать
                 </span>
@@ -119,7 +123,7 @@
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По функционалу</a></li>
                 </ul>
-                <div class="arrows">
+                <div class="template-arrows">
                     <a class="arrow-button" href="#"></a>
                     <a class="arrow-top" href="#"></a>
                 </div>
@@ -132,7 +136,7 @@
                     </span>
                     <span>
                     </span>
-                    <div class="buy">
+                    <div class="item-buy">
                         <b>
                             Aviator
                         </b>
@@ -143,9 +147,7 @@
                             8000 р.
                         </a>
                     </div>
-                    <a>
-                        <img src="img/aviator.png" alt="" width="" height="">
-                    </a>
+                    <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
                 </div>
                 <div class="catalog-item">
                     <span>
@@ -154,7 +156,7 @@
                     </span>
                     <span>
                     </span>
-                    <div class="buy">
+                    <div class="item-buy">
                         <b>
                             Sunset
                         </b>
@@ -165,9 +167,7 @@
                             10000 р.
                         </a>
                     </div>
-                    <a>
-                        <img src="img/aviator.png" alt="" width="" height="">
-                    </a>
+                    <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
                 </div>
                 <div class="catalog-item">
                     <span>
@@ -176,20 +176,18 @@
                     </span>
                     <span>
                     </span>
-                    <div class="buy">
+                    <div class="item-buy">
                         <b>
                             Forte
                         </b>
                         <p>
                             Отиличный макет для личного блога
                         </p>
-                        <a href="#">
+                        <a class="buy-pay" href="#">
                             5000 р.
                         </a>
                     </div>
-                    <a>
-                        <img src="img/aviator.png" alt="" width="" height="">
-                    </a>
+                    <img src="img/forte.jpg" alt="Forte" width="240" height="240">
                 </div>
                 <div class="catalog-item">
                     <span>
@@ -198,20 +196,18 @@
                     </span>
                     <span>
                     </span>
-                    <div class="buy">
+                    <div class="item-buy">
                         <b>
                             Modern organic thai
                         </b>
                         <p>
                             Сайт для ресторана быстрого питания
                         </p>
-                        <a href="#">
+                        <a class="buy-pay" href="#">
                             12000 р.
                         </a>
                     </div>
-                    <a>
-                        <img src="img/aviator.png" alt="" width="" height="">
-                    </a>
+                    <img src="img/modern.jpg" alt="Modern" width="240" height="240">
                 </div>
                 <div class="catalog-item">
                     <span>
@@ -220,20 +216,18 @@
                     </span>
                     <span>
                     </span>
-                    <div class="buy">
+                    <div class="item-buy">
                         <b>
                             Avenue
                         </b>
                         <p>
                             Макет для блога о путешествиях
                         </p>
-                        <a href="#">
+                        <a class="buy-pay" href="#">
                             8000 р.
                         </a>
                     </div>
-                    <a>
-                        <img src="img/aviator.png" alt="" width="" height="">
-                    </a>
+                    <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
                 </div>
                 <div class="catalog-item">
                     <span>
@@ -242,31 +236,29 @@
                     </span>
                     <span>
                     </span>
-                    <div class="buy">
+                    <div class="item-buy">
                         <b>
                             Dovetail
                         </b>
                         <p>
                             Интернет-магазин с галереей товаров
                         </p>
-                        <a href="#">
+                        <a class="buy-pay" href="#">
                             14000 р.
                         </a>
                     </div>
-                    <a>
-                        <img src="img/aviator.png" alt="" width="" height="">
-                    </a>
+                    <img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
                 </div>
             </div>
-            <div class="pages">
-                <ul>
+            <div class="catalog-pages">
+                <ul class="pages-ul">
                     <li>
                         <a href="#">
                             1
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="pages-active" href="#">
                             2
                         </a>
                     </li>
@@ -284,44 +276,60 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="map">
+    <footer class="main-footer">
+        <div class="footer-map">
             <div class="container">
-                <div class="feedback">
+                <div class="footer-feedback">
                     <b>
-                       Nerds Design Studio
-                   </b>
+                        Nerds Design Studio
+                    </b>
                     <p>
                         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>
                     <p>
                         тел. +7(812) 275-75-75
                     </p>
-                    <a class="btn" href="#">
+                    <a class="footer-btn" href="#">
                         Напишите нам
                     </a>
                 </div>
-                <div class="flag">
-                    <img src="img/flag.png" alt="we are here" width="230" height="190">
-                </div>
             </div>
         </div>
+        <div class="modal-content modal-content-show">
+            <div class="modal-content-close">
+            </div>
+            <form action="#" method="post">
+                <label>
+                    Ваше имя:
+                    <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+                </label>
+                <label>
+                    Текст письма:
+                    <textarea class="letter" rows="6" placeholder="В свободной форме">
+                    </textarea>
+                </label>
+                <button class="modal-btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
         <div class="container">
-            <div class="social">
-                <a>
-                    <img src="img/icon-vk.png" alt="" width="61" height="61">
+            <div class="footer-social">
+                <a class="social-vk" href="#">
                 </a>
-                <a>
-                    <img src="img/icon-facebook.png" alt="" width="61" height="61">
+                <a class="social-facebook" href="#">
                 </a>
-                <a>
-                    <img src="img/icon-instagram.png" alt="" width="61" height="61">
+                <a class="social-nstagram" href="#">
                 </a>
             </div>
-            <div class="discounts">
-                <h2>
+            <div class="footer-discounts">
+                <h1>
                     Давайте дружить, это выгодно!
-                </h2>
+                </h1>
                 <p>
                     Скидка 10% для друзей из социальных сетей.
                 </p>

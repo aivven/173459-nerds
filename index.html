@@ -4,55 +4,77 @@
 <head>
     <meta charset="utf-8">
     <title>Nerd's</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-heder">
+    <header class="main-header">
         <div class="container">
             <div class="index-logo">
-                <img src="img/index-logo.png" alt="Nerd's" width="155" height="70">
+                <img src="img/index-logo.png" alt="Nerd's" width="139" height="56">
             </div>
-            <nav class="menu">
-                <ul>
+            <nav class="main-navigation">
+                <ul class="navigation-ul">
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Студия 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Клиенты
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Магазин
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Контакты
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="btn-cart">
-                <a class="cart" href="#">Корзина</a>
+                <a class="navigation-link" href="#">Корзина</a>
             </div>
-
             <div class="slider">
                 <div class="slide-one">
-                    <h1>
-                    Долго, дорого, скурпулезно.
-                </h1>
+                    <div class="slide-header">
+                        Долго, дорого, скурпулезно.
+                    </div>
                     <p>
                         Математически выверенный дизайн для вашего сайта или мобильного приложения.
                     </p>
-                    <a class="btn" href="#">
+                    <a class="slide-btn" href="#">
                         Узнать больше
                     </a>
                 </div>
-                <div class="slider">
+                <div class="slide-two">
+                    <div class="slide-header">
+                        Долго, дорого, скурпулезно.
+                    </div>
+                    <p>
+                        Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                    </p>
+                    <a class="slide-btn" href="#">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="slide-three">
+                    <div class="slide-header">
+                        Долго, дорого, скурпулезно.
+                    </div>
+                    <p>
+                        Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                    </p>
+                    <a class="slide-btn" href="#">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="slider-switch">
                     <input type="radio" id="btn-1" name="toggle" checked>
                     <input type="radio" id="btn-2" name="toggle">
                     <input type="radio" id="btn-3" name="toggle">
@@ -63,142 +85,170 @@
                     </div>
                 </div>
             </div>
+        </div>
     </header>
     <main class="container">
         <div class="services">
-            <div class="block">
-                <img src="img/websites.png" alt="websites" width="240" height="128">
+            <div class="services-block">
+                <img src="img/websites.jpg" alt="websites" width="240" height="124">
                 <h2>
                     Веб-сайты
                 </h2>
                 <p>
                     Мир никогда не будет преждним после того как увидит ваш сайт!
                 </p>
-                <a class="btn" href="#">
+                <a class="services-btn red" href="#">
                     Заказать
                 </a>
             </div>
-            <div class="block">
-                <img src="img/apps.png" alt="apps" width="240" height="128">
+            <div class="services-block">
+                <img src="img/apps.jpg" alt="apps" width="240" height="124">
                 <h2>
                     Приложения
                 </h2>
                 <p>
                     Покорите топ-10 приложений в AppStrore и Google Play
                 </p>
-                <a class="btn" href="#">
+                <a class="services-btn green" href="#">
                     Заказать
                 </a>
             </div>
-            <div class="block">
-                <img src="img/presentations.png" alt="presentations" width="240" height="128">
+            <div class="services-block">
+                <img src="img/presentations.jpg" alt="presentations" width="240" height="124">
                 <h2>
                     Презентации
                 </h2>
                 <p>
                     Вы даже не подозреваете, насколько вы изумительны!
                 </p>
-                <a class="btn" href="#">
+                <a class="services-btn yellow" href="#">
                     Заказать
                 </a>
             </div>
         </div>
         <div class="about">
-            <div class="about-left">
-                <b>
+            <div class="about-top">
+                <div class="left">
+                    <h1>
                     Мы - маленькая, но гордая дизайн-студия из Краснодара.
-                </b>
-                <p>
-                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
-                </p>
-                <h3>
-                    Выполняем заказы на разработку:
-                </h3>
-                <ul>
-                    <li>
-                        Веб-сайтов любой сложности
-                    </li>
-                    <li>
-                        Мобильных приложений для iOS и Android
-                    </li>
-                    <li>
-                        Слайдшоу и видео для корпоративных презентаций
-                    </li>
-                </ul>
+                </h1>
+                    <p>
+                        Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="img/logo-2004.png" alt="logo" width="240" height="119">
+                </div>
             </div>
-            <div class="about-right">
-                <img src="img/logo.png" alt="logo" width="180" height="75">
-                <p class="since">
-                    Since 2004
-                </p>
-                <h3>
+            <div class="about-bottom">
+                <div class="left">
+                    <h2>
+                    Выполняем заказы на разработку:
+                </h2>
+                    <ul class="ul-styled">
+                        <li>
+                            Веб-сайтов любой сложности
+                        </li>
+                        <li>
+                            Мобильных приложений для iOS и Android
+                        </li>
+                        <li>
+                            Слайдшоу и видео для корпоративных презентаций
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h2>
                     Как мы работаем?          
-                </h3>
-                <ul>
-                    <li>
-                        С самотдачей на 146%
-                    </li>
-                    <li>
-                        Соблюдая сроки на 100%
-                    </li>
-                    <li>
-                        По предоплате 50%
-                    </li>
-                </ul>
+                </h2>
+                    <ul class="ul-styled">
+                        <li>
+                            С самоотдачей на 146%
+                        </li>
+                        <li>
+                            Соблюдая сроки на 100%
+                        </li>
+                        <li>
+                            По предоплате 50%
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="links">
-            <ul>
+            <ul class="links-ul">
                 <li>
-                    <a href="#"><img src="img/glukhanco.png" alt="glukhanco" width="250" height="110"></a>
+                    <a class="links-glukhanco" href="#">
+                        <img src="img/glukhanko.png" alt="glukhanco" width="198" height="37">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/htmlacademy.png" alt="htmlacademy" width="250" height="110"></a>
+                    <a class="links-htmlacademy" href="#">
+                        <img src="img/htmlacademy.png" alt="htmlacademy" width="199" height="68">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/borodinski.png" alt="borodinski" width="250" height="110"></a>
+                    <a class="links-borodinski" href="#">
+                        <img src="img/barbershop.png" alt="borodinski" width="209" height="90">
+                    </a>
                 </li>
             </ul>
         </div>
     </main>
-    <footer>
-        <div class="map">
+    <footer class="main-footer">
+        <div class="footer-map">
             <div class="container">
-                <div class="feedback">
+                <div class="footer-feedback">
                     <b>
-                           Nerds Design Studio
-                       </b>
+                        Nerds Design Studio
+                    </b>
                     <p>
                         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>
                     <p>
                         тел. +7(812) 275-75-75
                     </p>
-                    <a class="btn" href="#">
-                           Напишите нам
-                       </a>
-                </div>
-                <div class="flag">
-                    <img src="img/flag.png" alt="we are here" width="230" height="190">
+                    <a class="footer-btn" href="#">
+                        Напишите нам
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="modal-content modal-content-show">
+            <div class="modal-content-close">
+            </div>
+            <form action="#" method="post">
+                <label>
+                    Ваше имя:
+                    <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+                </label>
+                <label>
+                    Текст письма:
+                    <textarea class="letter" rows="6" placeholder="В свободной форме">
+                    </textarea>
+                </label>
+                <button class="modal-btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
         <div class="container">
-            <div class="social">
-                <a>
-                    <img src="img/icon-vk.png" alt="" width="61" height="61">
+            <div class="footer-social">
+                <a class="social-vk" href="#">
                 </a>
-                <a>
-                    <img src="img/icon-facebook.png" alt="" width="61" height="61">
+                <a class="social-facebook" href="#">
                 </a>
-                <a>
-                    <img src="img/icon-instagram.png" alt="" width="61" height="61">
+                <a class="social-nstagram" href="#">
                 </a>
             </div>
-            <div class="discounts">
-                <h2>
-               Давайте дружить, это выгодно!
-           </h2>
+            <div class="footer-discounts">
+                <h1>
+                    Давайте дружить, это выгодно!
+                </h1>
                 <p>
                     Скидка 10% для друзей из социальных сетей.
                 </p>
