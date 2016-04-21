@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nerd's</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="index-logo">
+                <img src="img/index-logo.png" alt="Nerd's" width="139" height="56">
+            </div>
+            <nav class="main-navigation">
+                <ul class="navigation-ul">
+                    <li>
+                        <a class="navigation-link" href="#">
+                            Студия 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navigation-link" href="#">
+                            Клиенты
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navigation-link" href="#">
+                            Магазин
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navigation-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-cart">
+                <a class="navigation-link" href="#">Корзина</a>
+            </div>
+            <div class="header-topic">
+                <h1>
+                    Добро пожаловать в магазин готовых макетов
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <!-- страница разделена на 2 колонки. Вот первым делом и заведи 2 блока, допустим с такими названиями классов:
+        <div class="catalog-filter">...</div>
+        <div class="catalog">...</div> -->
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+                <!-- внутренный h2 - лишний -->
+                <legend>
+                    <h2>
+                    Стоимость:
+                    </h2>
+                </legend>
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar">
+                            </div>
+                        </div>
+                        <div class="toggle min-toggle">
+                        </div>
+                        <div class="toggle max-toggle">
+                        </div>
+                    </div>
+                    <div class="price-controls">
+                        от
+                        <input class="min-price" type="text" value="0"> до
+                        <input class="max-price" type="text" value="15000">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>
+                    Сетка:
+                    </h2>
+                </legend>
+               <!--  в дальнейшем у вас будет пояснение как делать стилизацию этих инпутов. а пока поверь на слово.
+                здесь будет разметка 
+                <input type="radio" name="btn-grid" id="adaptive" checked><label for="adaptive">Адаптивная</label> -->
+                <!-- Поэтому для того, чтобы легче было управлять элементами, поместите всё это в доп. блок, например,
+                <div class="fieldset-item"><input type="radio" name="btn-grid" id="adaptive" checked><label for="adaptive">Адаптивная</label></div> -->
+                <label>
+                    <input type="radio" name="btn-grid" id="adaptive" checked> Адаптивная
+                </label>
+                <label>
+                    <input type="radio" name="btn-grid" id="fixed"> Фиксированная
+                </label>
+                <label>
+                    <input type="radio" name="btn-grid" id="rubber"> Резиновая
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>
+                       Особенности:
+                    </h2>
+                </legend>
+                <label>
+                    <input type="checkbox" name="btn-features" id="slider" checked> Слайдер
+                </label>
+                <label>
+                    <input type="checkbox" name="btn-features" id="benefits-unit"> Блок преимуществ
+                </label>
+                <label>
+                    <input type="checkbox" name="btn-features" id="news" checked> Новости
+                </label>
+                <label>
+                    <input type="checkbox" name="btn-features" id="gallery"> Галерея
+                </label>
+                <label>
+                    <input type="checkbox" name="btn-features" id="cart"> Корзина
+                </label>
+
+                <!-- и момент про id. чтобы тебе не мучиться с придумыванием id, да ещё учитывать чтобы нигде больше на странице не встретилось элемента с таким же id, внутри формы можно использовать типа id="feature-1" -->
+            </fieldset>
+            <!-- коммент по кнопке см. на index -->
+            <!-- <input type="submit" /> -->
+            <button class="filter-btn" type="submit">Показать</button>
+        </form>
+        <!-- template - не лучшее название. не понятно что обозначает
+        советую сделать всю правую колонку по подобию:
+        <div class="catalog">
+            <div class="catalog-sort">...</div>
+            <div class="catalog-list">...</div>
+        </div> -->
+        <div class="template">
+            <div class="template-filters">
+                <span>
+                    Сортировать
+                </span>
+                <ul>
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По функционалу</a></li>
+                </ul>
+                <div class="template-arrows">
+                    <a class="arrow-button" href="#"></a>
+                    <a class="arrow-top" href="#"></a>
+                </div>
+            </div>
+            <div class="catalog">
+               <!--  смотри. при разметке всегда разделяй элемент на логические части, и иди от большего к меншему.
+                у элемента мы выделяем 3 части: штука наверху с 3мя точками, картинка, всплывающий блок с названием и ценой-ссылкой.
+                и сразу прописывает эти блоки:
+                <div class="catalog-item">
+                    <div class="item-top">...</div>
+                    <img scr="" />
+                    <div class="item-hidden">...</div>
+                </div> -->
+                <!-- теперь про блок item-buy (у меня он item-hidden), не принципиально.
+                про элемент <b> уже говорила, здесь он не подходит. можешь заголовок, можешь див с классом.
+                ссылке присвой класс. это же кнопка, как и все другие. значит класс btn -->
+                <div class="catalog-item">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <div class="item-buy">
+                        <b>
+                            Aviator
+                        </b>
+                        <p>
+                            Одностраничный макет с авторским дизайном
+                        </p>
+                        <a href="#">
+                            8000 р.
+                        </a>
+                    </div>
+                    <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
+                </div>
+                <div class="catalog-item">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <div class="item-buy">
+                        <b>
+                            Sunset
+                        </b>
+                        <p>
+                            Интернет-магазин с личным кабинетом
+                        </p>
+                        <a href="#">
+                            10000 р.
+                        </a>
+                    </div>
+                    <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
+                </div>
+                <div class="catalog-item">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <div class="item-buy">
+                        <b>
+                            Forte
+                        </b>
+                        <p>
+                            Отиличный макет для личного блога
+                        </p>
+                        <a class="buy-pay" href="#">
+                            5000 р.
+                        </a>
+                    </div>
+                    <img src="img/forte.jpg" alt="Forte" width="240" height="240">
+                </div>
+                <div class="catalog-item">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <div class="item-buy">
+                        <b>
+                            Modern organic thai
+                        </b>
+                        <p>
+                            Сайт для ресторана быстрого питания
+                        </p>
+                        <a class="buy-pay" href="#">
+                            12000 р.
+                        </a>
+                    </div>
+                    <img src="img/modern.jpg" alt="Modern" width="240" height="240">
+                </div>
+                <div class="catalog-item">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <div class="item-buy">
+                        <b>
+                            Avenue
+                        </b>
+                        <p>
+                            Макет для блога о путешествиях
+                        </p>
+                        <a class="buy-pay" href="#">
+                            8000 р.
+                        </a>
+                    </div>
+                    <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
+                </div>
+                <div class="catalog-item">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <div class="item-buy">
+                        <b>
+                            Dovetail
+                        </b>
+                        <p>
+                            Интернет-магазин с галереей товаров
+                        </p>
+                        <a class="buy-pay" href="#">
+                            14000 р.
+                        </a>
+                    </div>
+                    <img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
+                </div>
+            </div>
+            <div class="catalog-pages">
+                <ul class="pages-ul">
+                    <li>
+                        <a href="#">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pages-active" href="#">
+                            2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Следующая
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-map">
+            <div class="container">
+                <div class="footer-feedback">
+                    <b>
+                        Nerds Design Studio
+                    </b>
+                    <p>
+                        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    </p>
+                    <p>
+                        тел. +7(812) 275-75-75
+                    </p>
+                    <a class="footer-btn" href="#">
+                        Напишите нам
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content modal-content-show">
+            <div class="modal-content-close">
+            </div>
+            <form action="#" method="post">
+                <label>
+                    Ваше имя:
+                    <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+                </label>
+                <label>
+                    Текст письма:
+                    <textarea class="letter" rows="6" placeholder="В свободной форме">
+                    </textarea>
+                </label>
+                <button class="modal-btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="footer-social">
+                <a class="social-vk" href="#">
+                </a>
+                <a class="social-facebook" href="#">
+                </a>
+                <a class="social-nstagram" href="#">
+                </a>
+            </div>
+            <div class="footer-discounts">
+                <h1>
+                    Давайте дружить, это выгодно!
+                </h1>
+                <p>
+                    Скидка 10% для друзей из социальных сетей.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

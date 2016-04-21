@@ -4,58 +4,82 @@
 <head>
     <meta charset="utf-8">
     <title>Nerd's</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- main-heder - лучше main-header, понятнее будет -->
-    <header class="main-heder">
+    <header class="main-header">
         <div class="container">
             <div class="index-logo">
-                <img src="img/index-logo.png" alt="Nerd's" width="155" height="70">
+                <img src="img/index-logo.png" alt="Nerd's" width="139" height="56">
             </div>
-            <nav class="menu">
-                <ul>
+            <!-- navigation-link - предлагаю убрать этот класс, в данном случае он уже лишний -->
+            <nav class="main-navigation">
+                <ul class="navigation-ul">
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Студия 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Клиенты
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Магазин
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="navigation-link" href="#">
                             Контакты
                         </a>
                     </li>
                 </ul>
             </nav>
+            <!-- navigation-link - и здесь убрать -->
             <div class="btn-cart">
-                <a class="cart" href="#">Корзина</a>
+                <a class="navigation-link" href="#">Корзина</a>
             </div>
-
-            <!-- 2 дива с одинаковым названием класса slider, один вложен в другой. такого быть не должно -->
             <div class="slider">
+                <!-- нет смысла в 3х разных классах slide-one, slide-two и slide-three. Ведь все эти слайды одинаковы по верстке. 
+                можно обойтись одним классом slide-item. чтобы скрыть все слайды, кроме одного, первого, можно в стилях будет воспользоваться селектором. -->
                 <div class="slide-one">
-                    <!-- лучше не использовать тег h1, т.к. очевидно, что слайдов будет как минимум 3. А тег h1 должен быть только один на странице. -->
-                    <h1>
-                    Долго, дорого, скурпулезно.
-                </h1>
+                    <div class="slide-header">
+                        Долго, дорого, скурпулезно.
+                    </div>
                     <p>
                         Математически выверенный дизайн для вашего сайта или мобильного приложения.
                     </p>
-                    <a class="btn" href="#">
+                    <!-- у вас правильно был сделан класс btn. Это общий класс для всех кнопок. Если захотите изменить ряд стилей для кнопки именно слайдера, напрмер, ширину изменить, то можно использовать доп. стиль (class="btn slide-btn"), либо в стилях прописывать .slide-item .btn{...} -->
+                    <a class="slide-btn" href="#">
                         Узнать больше
                     </a>
                 </div>
-                <div class="slider"> <!-- здесь -->
+                <div class="slide-two">
+                    <div class="slide-header">
+                        Долго, дорого, скурпулезно.
+                    </div>
+                    <p>
+                        Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                    </p>
+                    <a class="slide-btn" href="#">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="slide-three">
+                    <div class="slide-header">
+                        Долго, дорого, скурпулезно.
+                    </div>
+                    <p>
+                        Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                    </p>
+                    <a class="slide-btn" href="#">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="slider-switch">
                     <input type="radio" id="btn-1" name="toggle" checked>
                     <input type="radio" id="btn-2" name="toggle">
                     <input type="radio" id="btn-3" name="toggle">
@@ -66,152 +90,183 @@
                     </div>
                 </div>
             </div>
+        </div>
     </header>
     <main class="container">
-        <div class="services">
-            <div class="block">
-                <img src="img/websites.png" alt="websites" width="240" height="128">
+        <!-- давай всё-таки для контента главной страницы заведем прфикс index -->
+        <div class="services"> <!-- index-services -->
+            <div class="services-block"> <!-- здесь оставляем, всё ок -->
+                <img src="img/websites.jpg" alt="websites" width="240" height="124">
                 <h2>
                     Веб-сайты
                 </h2>
                 <p>
                     Мир никогда не будет преждним после того как увидит ваш сайт!
                 </p>
-                <a class="btn" href="#">
+                <!-- коммент по кнопкам тот же, что и в слайдере -->
+                <a class="services-btn red" href="#">
                     Заказать
                 </a>
             </div>
-            <div class="block">
-                <img src="img/apps.png" alt="apps" width="240" height="128">
+            <div class="services-block">
+                <img src="img/apps.jpg" alt="apps" width="240" height="124">
                 <h2>
                     Приложения
                 </h2>
                 <p>
                     Покорите топ-10 приложений в AppStrore и Google Play
                 </p>
-                <a class="btn" href="#">
+                <a class="services-btn green" href="#">
                     Заказать
                 </a>
             </div>
-            <div class="block">
-                <img src="img/presentations.png" alt="presentations" width="240" height="128">
+            <div class="services-block">
+                <img src="img/presentations.jpg" alt="presentations" width="240" height="124">
                 <h2>
                     Презентации
                 </h2>
                 <p>
                     Вы даже не подозреваете, насколько вы изумительны!
                 </p>
-                <a class="btn" href="#">
+                <a class="services-btn yellow" href="#">
                     Заказать
                 </a>
             </div>
         </div>
-        <!-- я бы посоветовала поделить немного по другому. Всегда смотри на выравнивание блоков верстки относительно друг друга и предусматривай то, что текст может измениться, может быть не 2 строки текста, а 5. И что куда уедет в этом случае.
-        Здесь списки выровнены по горизонтальной направляющей. Если добавить текст в левую колонку, то левый список съедет вниз.
-        Поменяй разметку исходя из этих соображений. Здесь это не критично, но на будущее привыкнуть это учитывать будет полезно. -->
-        <div class="about">
-            <div class="about-left">
-                <!-- теги используй по их назначению. <b> необходим для выделения части текста жирным. Это строчный элемент. А здесь очевидно блочный элемент и очевидно, что это заголовок. Вот как раз в других бы местах можно и не использовать заголовки, а брать дивы с классами, а здесь заголовку самое место. -->
-                <b>
+        <div class="about"> <!-- index-about -->
+            <div class="about-top">
+                <div class="left">
+                    <h1>
                     Мы - маленькая, но гордая дизайн-студия из Краснодара.
-                </b>
-                <p>
-                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
-                </p>
-                <h3>
-                    Выполняем заказы на разработку:
-                </h3>
-                <!-- для стилизованного списка сразу прописывай класс (например, ul-styled), чтобы можно было его использовать в других местах, а также чтобы оставалась возможность использовать нестилизованные списки. -->
-                <ul>
-                    <li>
-                        Веб-сайтов любой сложности
-                    </li>
-                    <li>
-                        Мобильных приложений для iOS и Android
-                    </li>
-                    <li>
-                        Слайдшоу и видео для корпоративных презентаций
-                    </li>
-                </ul>
+                </h1>
+                    <p>
+                        Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="img/logo-2004.png" alt="logo" width="240" height="119">
+                </div>
             </div>
-            <div class="about-right">
-                <!-- надпись "Since 2004" является частью картинки -->
-                <img src="img/logo.png" alt="logo" width="180" height="75">
-                <p class="since">
-                    Since 2004
-                </p>
-                <h3>
+            <div class="about-bottom">
+                <div class="left">
+                    <h2>
+                    Выполняем заказы на разработку:
+                </h2>
+                    <ul class="ul-styled">
+                        <li>
+                            Веб-сайтов любой сложности
+                        </li>
+                        <li>
+                            Мобильных приложений для iOS и Android
+                        </li>
+                        <li>
+                            Слайдшоу и видео для корпоративных презентаций
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h2>
                     Как мы работаем?          
-                </h3>
-                <ul>
-                    <li>
-                        С самотдачей на 146%
-                    </li>
-                    <li>
-                        Соблюдая сроки на 100%
-                    </li>
-                    <li>
-                        По предоплате 50%
-                    </li>
-                </ul>
+                </h2>
+                    <ul class="ul-styled">
+                        <li>
+                            С самоотдачей на 146%
+                        </li>
+                        <li>
+                            Соблюдая сроки на 100%
+                        </li>
+                        <li>
+                            По предоплате 50%
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="links">
-            <ul>
+        <div class="links"> <!-- index-links -->
+            <ul class="links-ul">
                 <li>
-                    <a href="#"><img src="img/glukhanco.png" alt="glukhanco" width="250" height="110"></a>
+                    <!-- так, вот здесь важный момент. 
+                    никогда не называй класс по содержимому контента. здесь вместо этих ссылок ведь могут быть какие угодно компании, так ведь?
+                    и что, добавят новую компанию и надо будет добавлять новый класс?
+                    в данном случае класс вообще не нужен. но если бы нужен был, стоило его назвать links-item. -->
+                    <a class="links-glukhanco" href="#">
+                        <img src="img/glukhanko.png" alt="glukhanco" width="198" height="37">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/htmlacademy.png" alt="htmlacademy" width="250" height="110"></a>
+                    <a class="links-htmlacademy" href="#">
+                        <img src="img/htmlacademy.png" alt="htmlacademy" width="199" height="68">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/borodinski.png" alt="borodinski" width="250" height="110"></a>
+                    <a class="links-borodinski" href="#">
+                        <img src="img/barbershop.png" alt="borodinski" width="209" height="90">
+                    </a>
                 </li>
             </ul>
         </div>
     </main>
-    <!-- футеру присвой класс, по аналогии с хедером -->
-    <footer>
-        <div class="map">
+    <footer class="main-footer">
+        <div class="footer-map">
             <div class="container">
-                <div class="feedback">
+                <div class="footer-feedback">
                     <b>
-                           Nerds Design Studio
-                       </b>
+                        Nerds Design Studio
+                    </b>
                     <p>
                         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>
                     <p>
                         тел. +7(812) 275-75-75
                     </p>
-                    <a class="btn" href="#">
-                           Напишите нам
-                       </a>
-                </div>
-               <!--  метка будет вставляться прямо на карту, в скрипте (если ты будешь его реализовывать, иначе это просто часть картинки) -->
-                <div class="flag">
-                    <img src="img/flag.png" alt="we are here" width="230" height="190">
+                    <!-- коммент по кнопке см. выше -->
+                    <a class="footer-btn" href="#">
+                        Напишите нам
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="modal-content modal-content-show">
+            <!-- можно и див, но лучше button - по умолчанию никак не отрабатывает, но предполагает наличие действия. т.е. увидев его в разметке понятно, что он что то делает. -->
+            <div class="modal-content-close">
+            </div>
+           <!--  советую форме присвоить класс, можно даже класс form. сможете использовать его в местах, где будут подобные формы. -->
+            <form action="#" method="post">
+                <!-- здесь нет смысла помещать инпут в label. сначала label с названием поля, потом инпут -->
+                <label>
+                    Ваше имя:
+                    <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+                </label>
+                <label>
+                    Текст письма:
+                    <textarea class="letter" rows="6" placeholder="В свободной форме">
+                    </textarea>
+                </label>
+                <!-- коммент по кнопке см. выше -->
+                <!-- <input type="submit" /> -->
+                <button class="modal-btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
         <div class="container">
-            <div class="social">
-                <!-- не забывай атрибут href у ссылок. И эти ссылки при наведении будут менять цвет. При такой реализации это будет не оч. красиво делать, хотя и можно. Легче ведь просто менят бэкграунд у блока. Т.е.
-                <a href="#" class="social-vk"></a> -->
-                <a>
-                    <img src="img/icon-vk.png" alt="" width="61" height="61">
+            <div class="footer-social">
+                <a class="social-vk" href="#">
                 </a>
-                <a>
-                    <img src="img/icon-facebook.png" alt="" width="61" height="61">
+                <a class="social-facebook" href="#">
                 </a>
-                <a>
-                    <img src="img/icon-instagram.png" alt="" width="61" height="61">
+                <a class="social-nstagram" href="#">
                 </a>
             </div>
-            <div class="discounts">
-                <h2>
-               Давайте дружить, это выгодно!
-           </h2>
+            <div class="footer-discounts">
+                <!-- оставь h1 для основного заголовка страницы. это не он. -->
+                <h1>
+                    Давайте дружить, это выгодно!
+                </h1>
                 <p>
                     Скидка 10% для друзей из социальных сетей.
                 </p>
@@ -220,32 +275,4 @@
     </footer>
 </body>
 
-<!-- В целом очень хорошо всё, с логическим мышлением всё в порядке.
-Есть один нюанс, он относится ко всей верстке. Это именование классов.
-Выбери для себя логику именования, и просто всегда её придерживайся. Будет легче ориентироваться в верстке и проще придумывать названия классов.
-Расскажу как делаю я, чтобы было понятно что я имею в виду. 
-На примере блока srvices:
-<div class="index-services">
-    <div class="services-item">
-        <img src="img/websites.png" alt="websites" width="240" height="128">
-        <h2 class="services-item__name">Веб-сайты</h2>
-        <p class="services-item__descr">
-            Мир никогда не будет преждним после того как увидит ваш сайт!
-        </p>
-        <a class="btn red" href="#">Заказать</a>
-    </div>
-    ...
-</div> -->
-<!-- Т.е. у меня есть внешний контейнер index-services, я добавила префикс index, чтобы было понятно что это блок для главной страницы. 
-Далее сами элементы, у меня это класс services-item, т.е. есть префикс services, которым я показываю принадлежность к смысловой группе, далее приставка -item, ей я пользуюсь всегда, когда у меня есть подобный набор элементов (товары, производители, новости и т.п.). 
-Также в стилях для стилизации services-item я не буду пользоваться иерархией классов, т.е. (.index-services .service-item{...}), тем самым я оставлю возможность воспользоваться элементом service-item и вне index-services. Вдруг он у меня встретится в др. частях макета.
-Идем глубже. 
-Для имени я использую services-item__name, префикс внешнего контейнера services-item и приставку __name. Остальные элементы по аналогии.
-Если будет вложенность ещё глубже, то стараюсь не использовать цепочки типа services-item__name-toppath__link-styled (тупой несуществующий пример), а беру за префикс более ближний по иерархии контейнер (в данном примере name).
-Также для кнопки я использую доп класс red, ведь кнопки у нас различаются цветом. И т.к. это единственное чем они различаются, то все основные стили оставляю за классом btn.
-
-Разумеется, в данном примере можно было обойтись и без внутренних классов, т.е. оставить просто h2, p. Возможно, я сделала бы также. Но зачастую я перестраховываюсь и использую эти классы.
-
-Попробуй исправить разметку с учетом своей логики именования классов.
-Я по тексту разметки особо не обращала в комментариях на это внимание. -->
 </html>
