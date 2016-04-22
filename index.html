@@ -16,32 +16,32 @@
             <nav class="main-navigation">
                 <ul class="navigation-ul">
                     <li>
-                        <a class="navigation-link" href="#">
+                        <a href="#">
                             Студия 
                         </a>
                     </li>
                     <li>
-                        <a class="navigation-link" href="#">
+                        <a href="#">
                             Клиенты
                         </a>
                     </li>
                     <li>
-                        <a class="navigation-link" href="#">
+                        <a href="#">
                             Магазин
                         </a>
                     </li>
                     <li>
-                        <a class="navigation-link" href="#">
+                        <a href="#">
                             Контакты
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="btn-cart">
-                <a class="navigation-link" href="#">Корзина</a>
+                <a href="#">Корзина</a>
             </div>
             <div class="slider">
-                <div class="slide-one">
+                <div class="slide-item">
                     <div class="slide-header">
                         Долго, дорого, скурпулезно.
                     </div>
@@ -52,25 +52,25 @@
                         Узнать больше
                     </a>
                 </div>
-                <div class="slide-two">
+                <div class="slide-item">
                     <div class="slide-header">
                         Долго, дорого, скурпулезно.
                     </div>
                     <p>
                         Математически выверенный дизайн для вашего сайта или мобильного приложения.
                     </p>
-                    <a class="slide-btn" href="#">
+                    <a class="btn slide-btn" href="#">
                         Узнать больше
                     </a>
                 </div>
-                <div class="slide-three">
+                <div class="slide-item">
                     <div class="slide-header">
                         Долго, дорого, скурпулезно.
                     </div>
                     <p>
                         Математически выверенный дизайн для вашего сайта или мобильного приложения.
                     </p>
-                    <a class="slide-btn" href="#">
+                    <a class="btn" href="#">
                         Узнать больше
                     </a>
                 </div>
@@ -87,8 +87,9 @@
             </div>
         </div>
     </header>
+
     <main class="container">
-        <div class="services">
+        <div class="index-services">
             <div class="services-block">
                 <img src="img/websites.jpg" alt="websites" width="240" height="124">
                 <h2>
@@ -97,7 +98,7 @@
                 <p>
                     Мир никогда не будет преждним после того как увидит ваш сайт!
                 </p>
-                <a class="services-btn red" href="#">
+                <a class="btn red" href="#">
                     Заказать
                 </a>
             </div>
@@ -109,7 +110,7 @@
                 <p>
                     Покорите топ-10 приложений в AppStrore и Google Play
                 </p>
-                <a class="services-btn green" href="#">
+                <a class="btn green" href="#">
                     Заказать
                 </a>
             </div>
@@ -121,17 +122,17 @@
                 <p>
                     Вы даже не подозреваете, насколько вы изумительны!
                 </p>
-                <a class="services-btn yellow" href="#">
+                <a class="btn yellow" href="#">
                     Заказать
                 </a>
             </div>
         </div>
-        <div class="about">
+        <div class="index-about">
             <div class="about-top">
                 <div class="left">
-                    <h1>
-                    Мы - маленькая, но гордая дизайн-студия из Краснодара.
-                </h1>
+                    <div class="head">
+                        Мы - маленькая, но гордая дизайн-студия из Краснодара.
+                    </div>
                     <p>
                         Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
                     </p>
@@ -144,7 +145,7 @@
                 <div class="left">
                     <h2>
                     Выполняем заказы на разработку:
-                </h2>
+                    </h2>
                     <ul class="ul-styled">
                         <li>
                             Веб-сайтов любой сложности
@@ -160,7 +161,7 @@
                 <div class="right">
                     <h2>
                     Как мы работаем?          
-                </h2>
+                    </h2>
                     <ul class="ul-styled">
                         <li>
                             С самоотдачей на 146%
@@ -175,26 +176,27 @@
                 </div>
             </div>
         </div>
-        <div class="links">
+        <div class="index-links">
             <ul class="links-ul">
                 <li>
-                    <a class="links-glukhanco" href="#">
+                    <a href="#">
                         <img src="img/glukhanko.png" alt="glukhanco" width="198" height="37">
                     </a>
                 </li>
                 <li>
-                    <a class="links-htmlacademy" href="#">
+                    <a href="#">
                         <img src="img/htmlacademy.png" alt="htmlacademy" width="199" height="68">
                     </a>
                 </li>
                 <li>
-                    <a class="links-borodinski" href="#">
+                    <a href="#">
                         <img src="img/barbershop.png" alt="borodinski" width="209" height="90">
                     </a>
                 </li>
             </ul>
         </div>
     </main>
+
     <footer class="main-footer">
         <div class="footer-map">
             <div class="container">
@@ -208,32 +210,30 @@
                     <p>
                         тел. +7(812) 275-75-75
                     </p>
-                    <a class="footer-btn" href="#">
+                    <a class="btn" href="#">
                         Напишите нам
                     </a>
                 </div>
             </div>
         </div>
         <div class="modal-content modal-content-show">
-            <div class="modal-content-close">
-            </div>
-            <form action="#" method="post">
-                <label>
+            <button class="modal-content-close">
+            </button>
+            <form class="form" action="#" method="post">
+                <label for="name">
                     Ваше имя:
-                    <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
                 </label>
-                <label>
+                <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+                <label for="e-mail">
                     Ваш e-mail:
-                    <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
                 </label>
-                <label>
+                <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+                <label for="text">
                     Текст письма:
-                    <textarea class="letter" rows="6" placeholder="В свободной форме">
-                    </textarea>
                 </label>
-                <button class="modal-btn" type="submit">
-                    Отправить
-                </button>
+                <textarea class="letter" id="text" rows="6" placeholder="В свободной форме">
+                </textarea>
+                <input class="btn" type="submit" value="Отправить">
             </form>
         </div>
         <div class="container">
@@ -246,9 +246,9 @@
                 </a>
             </div>
             <div class="footer-discounts">
-                <h1>
+                <p class="head">
                     Давайте дружить, это выгодно!
-                </h1>
+                </p>
                 <p>
                     Скидка 10% для друзей из социальных сетей.
                 </p>

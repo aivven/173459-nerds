@@ -47,74 +47,95 @@
             </div>
         </div>
     </header>
+
     <main class="container">
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-                <legend>
-                    <h2>
-                    Стоимость:
-                    </h2>
-                </legend>
-                <div class="range-filter">
-                    <div class="range-controls">
-                        <div class="scale">
-                            <div class="bar">
+        <div class="catalog-filter">
+            <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                    <legend>
+                        Стоимость:
+                    </legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar">
+                                </div>
+                            </div>
+                            <div class="toggle min-toggle">
+                            </div>
+                            <div class="toggle max-toggle">
                             </div>
                         </div>
-                        <div class="toggle min-toggle">
-                        </div>
-                        <div class="toggle max-toggle">
+                        <div class="price-controls">
+                            от
+                            <input class="min-price" type="text" value="0"> до
+                            <input class="max-price" type="text" value="15000">
                         </div>
                     </div>
-                    <div class="price-controls">
-                        от
-                        <input class="min-price" type="text" value="0"> до
-                        <input class="max-price" type="text" value="15000">
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Сетка:
+                    </legend>
+                    <div class="fieldset-item">
+                        <input type="radio" name="btn-grid" id="feature-1" checked>
                     </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <h2>
-                    Сетка:
-                    </h2>
-                </legend>
-                <label>
-                    <input type="radio" name="btn-grid" id="adaptive" checked> Адаптивная
-                </label>
-                <label>
-                    <input type="radio" name="btn-grid" id="fixed"> Фиксированная
-                </label>
-                <label>
-                    <input type="radio" name="btn-grid" id="rubber"> Резиновая
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <h2>
-                       Особенности:
-                    </h2>
-                </legend>
-                <label>
-                    <input type="checkbox" name="btn-features" id="slider" checked> Слайдер
-                </label>
-                <label>
-                    <input type="checkbox" name="btn-features" id="benefits-unit"> Блок преимуществ
-                </label>
-                <label>
-                    <input type="checkbox" name="btn-features" id="news" checked> Новости
-                </label>
-                <label>
-                    <input type="checkbox" name="btn-features" id="gallery"> Галерея
-                </label>
-                <label>
-                    <input type="checkbox" name="btn-features" id="cart"> Корзина
-                </label>
-            </fieldset>
-            <button class="filter-btn" type="submit">Показать</button>
-        </form>
-        <div class="template">
-            <div class="template-filters">
+                    <label for="adaptive">
+                        Адаптивная
+                    </label>
+                    <div class="fieldset-item">
+                        <input type="radio" name="btn-grid" id="feature-2">
+                    </div>
+                    <label for="fixed">
+                        Фиксированная
+                    </label>
+                    <div class="fieldset-item">
+                        <input type="radio" name="btn-grid" id="feature-3">
+                    </div>
+                    <label for="rubber">
+                        Резиновая
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Особенности:
+                    </legend>
+                    <div class="fieldset-item">
+                        <input type="checkbox" name="btn-features" id="feature-4" checked>
+                    </div>
+                    <label>
+                        Слайдер
+                    </label>
+                    <div class="fieldset-item">
+                        <input type="checkbox" name="btn-features" id="feature-5">
+                    </div>
+                    <label>
+                        Блок преимуществ
+                    </label>
+                    <div class="fieldset-item">
+                        <input type="checkbox" name="btn-features" id="feature-6" checked>
+                    </div>
+                    <label>
+                        Новости
+                    </label>
+                    <div class="fieldset-item">
+                        <input type="checkbox" name="btn-features" id="feature-7">
+                    </div>
+                    <label>
+                        Галерея
+                    </label>
+                    <div class="fieldset-item">
+                        <input type="checkbox" name="btn-features" id="feature-8">
+                    </div>
+                    <label>
+                        Корзина
+                    </label>
+                </fieldset>
+                <input class="btn" type="submit" value="Показать">
+            </form>
+        </div>
+        <div class="catalog">
+            <div class="catalog-sort">
                 <span>
                     Сортировать
                 </span>
@@ -128,122 +149,134 @@
                     <a class="arrow-top" href="#"></a>
                 </div>
             </div>
-            <div class="catalog">
+            <div class="catalog-list">
                 <div class="catalog-item">
-                    <span>
+                    <div class="item-top">
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <div class="item-buy">
-                        <b>
+                    </div>
+                    <div class="item-hidden">
+                        <div class="item-head">
                             Aviator
-                        </b>
+                        </div>
                         <p>
                             Одностраничный макет с авторским дизайном
                         </p>
-                        <a href="#">
+                        <a class="btn" href="#">
                             8000 р.
                         </a>
                     </div>
                     <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
                 </div>
                 <div class="catalog-item">
-                    <span>
+                    <div class="item-top">
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <div class="item-buy">
-                        <b>
+                    </div>
+                    <div class="item-hidden">
+                        <div class="item-head">
                             Sunset
-                        </b>
+                        </div>
                         <p>
                             Интернет-магазин с личным кабинетом
                         </p>
-                        <a href="#">
+                        <a class="btn" href="#">
                             10000 р.
                         </a>
                     </div>
                     <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
                 </div>
                 <div class="catalog-item">
-                    <span>
+                    <div class="item-top">
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <div class="item-buy">
-                        <b>
+                    </div>
+                    <div class="item-hidden">
+                        <div class="item-head">
                             Forte
-                        </b>
+                        </div>
                         <p>
                             Отиличный макет для личного блога
                         </p>
-                        <a class="buy-pay" href="#">
+                        <a class="btn" href="#">
                             5000 р.
                         </a>
                     </div>
                     <img src="img/forte.jpg" alt="Forte" width="240" height="240">
                 </div>
                 <div class="catalog-item">
-                    <span>
+                    <div class="item-top">
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <div class="item-buy">
-                        <b>
+                    </div>
+                    <div class="item-hidden">
+                        <div class="item-head">
                             Modern organic thai
-                        </b>
+                        </div>
                         <p>
                             Сайт для ресторана быстрого питания
                         </p>
-                        <a class="buy-pay" href="#">
+                        <a class="btn" href="#">
                             12000 р.
                         </a>
                     </div>
                     <img src="img/modern.jpg" alt="Modern" width="240" height="240">
                 </div>
                 <div class="catalog-item">
-                    <span>
+                    <div class="item-top">
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <div class="item-buy">
-                        <b>
+                    </div>
+                    <div class="item-hidden">
+                        <div class="item-head">
                             Avenue
-                        </b>
+                        </div>
                         <p>
                             Макет для блога о путешествиях
                         </p>
-                        <a class="buy-pay" href="#">
+                        <a class="btn" href="#">
                             8000 р.
                         </a>
                     </div>
                     <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
                 </div>
                 <div class="catalog-item">
-                    <span>
+                    <div class="item-top">
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <span>
+                        <span>
                     </span>
-                    <div class="item-buy">
-                        <b>
+                    </div>
+                    <div class="item-hidden">
+                        <div class="item-head">
                             Dovetail
-                        </b>
+                        </div>
                         <p>
                             Интернет-магазин с галереей товаров
                         </p>
-                        <a class="buy-pay" href="#">
+                        <a class="btn" href="#">
                             14000 р.
                         </a>
                     </div>
@@ -276,6 +309,7 @@
             </div>
         </div>
     </main>
+
     <footer class="main-footer">
         <div class="footer-map">
             <div class="container">
@@ -289,32 +323,30 @@
                     <p>
                         тел. +7(812) 275-75-75
                     </p>
-                    <a class="footer-btn" href="#">
+                    <a class="btn" href="#">
                         Напишите нам
                     </a>
                 </div>
             </div>
         </div>
         <div class="modal-content modal-content-show">
-            <div class="modal-content-close">
-            </div>
-            <form action="#" method="post">
-                <label>
+            <button class="modal-content-close">
+            </button>
+            <form class="form" action="#" method="post">
+                <label for="name">
                     Ваше имя:
-                    <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
                 </label>
-                <label>
+                <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+                <label for="e-mail">
                     Ваш e-mail:
-                    <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
                 </label>
-                <label>
+                <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+                <label for="text">
                     Текст письма:
-                    <textarea class="letter" rows="6" placeholder="В свободной форме">
-                    </textarea>
                 </label>
-                <button class="modal-btn" type="submit">
-                    Отправить
-                </button>
+                <textarea class="letter" id="text" rows="6" placeholder="В свободной форме">
+                </textarea>
+                <input class="btn" type="submit" value="Отправить">
             </form>
         </div>
         <div class="container">
@@ -327,9 +359,9 @@
                 </a>
             </div>
             <div class="footer-discounts">
-                <h1>
+                <p class="head">
                     Давайте дружить, это выгодно!
-                </h1>
+                </p>
                 <p>
                     Скидка 10% для друзей из социальных сетей.
                 </p>
