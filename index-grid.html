@@ -2,64 +2,239 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>Nerd's</title>
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Nerd's</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container clearfix">
-            <div class="index-logo">
-            </div>
-            <nav class="main-navigation">
-            </nav>
-            <div class="btn-cart">
-            </div>
-            <div class="slider">
-            </div>
+  <header class="main-header">
+    <div class="container clearfix">
+      <div class="index-logo">
+        <img src="img/index-logo.png" alt="Nerd's" width="139" height="56">
+      </div>
+      <nav class="main-navigation">
+        <ul class="navigation-ul">
+          <li>
+            <a href="#">
+                            Студия 
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                            Клиенты
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                            Магазин
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                            Контакты
+                        </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn-cart">
+        <a href="#">Корзина</a>
+      </div>
+      <div class="slider">
+        <div class="slide-item">
+          <div class="slide-header">
+            Долго, дорого, скурпулезно.
+          </div>
+          <p>
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          </p>
+          <a class="btn slide-btn" href="#">
+                        Узнать больше
+                    </a>
         </div>
-    </header>
+        <div class="slide-item">
+          <div class="slide-header">
+            Долго, дорого, скурпулезно.
+          </div>
+          <p>
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          </p>
+          <a class="btn slide-btn" href="#">
+                        Узнать больше
+                    </a>
+        </div>
+        <div class="slide-item">
+          <div class="slide-header">
+            Долго, дорого, скурпулезно.
+          </div>
+          <p>
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          </p>
+          <a class="btn slide-btn" href="#">
+                        Узнать больше
+                    </a>
+        </div>
+        <div class="slider-switch">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <main class="container clearfix">
-        <div class="index-services">
-            <div class="services-block">
-            </div>
-            <div class="services-block">
-            </div>
-            <div class="services-block">
-            </div>
+  <main class="container clearfix">
+    <div class="index-services clearfix">
+      <div class="services-block">
+        <img src="img/websites.jpg" alt="websites" width="240" height="124">
+        <h2>
+                    Веб-сайты
+                </h2>
+        <p>
+          Мир никогда не будет преждним после того как увидит ваш сайт!
+        </p>
+        <a class="btn red" href="#">
+                    Заказать
+                </a>
+      </div>
+      <div class="services-block">
+        <img src="img/apps.jpg" alt="apps" width="240" height="124">
+        <h2>
+                    Приложения
+                </h2>
+        <p>
+          Покорите топ-10 приложений в AppStrore и Google Play
+        </p>
+        <a class="btn green" href="#">
+                    Заказать
+                </a>
+      </div>
+      <div class="services-block">
+        <img src="img/presentations.jpg" alt="presentations" width="240" height="124">
+        <h2>
+                    Презентации
+                </h2>
+        <p>
+          Вы даже не подозреваете, насколько вы изумительны!
+        </p>
+        <a class="btn yellow" href="#">
+                    Заказать
+                </a>
+      </div>
+    </div>
+    <div class="index-about">
+      <div class="about-top clearfix">
+        <div class="left">
+          <div class="head">
+            Мы - маленькая, но гордая дизайн-студия из Краснодара.
+          </div>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+          </p>
         </div>
-        <div class="index-about">
-            <div class="about-top">
-                <div class="left">
-                </div>
-                <div class="right">
-                </div>
-            </div>
-            <div class="about-bottom">
-                <div class="left">
-                </div>
-                <div class="right">
-                </div>
-            </div>
+        <div class="right">
+          <img src="img/logo-2004.png" alt="logo" width="240" height="119">
         </div>
-        <div class="index-links">
+      </div>
+      <div class="about-bottom clearfix">
+        <div class="left">
+          <h2>
+                    Выполняем заказы на разработку:
+                    </h2>
+          <ul class="ul-styled">
+            <li>
+              Веб-сайтов любой сложности
+            </li>
+            <li>
+              Мобильных приложений для iOS и Android
+            </li>
+            <li>
+              Слайдшоу и видео для корпоративных презентаций
+            </li>
+          </ul>
         </div>
-    </main>
+        <div class="right">
+          <h2>
+                    Как мы работаем?          
+                    </h2>
+          <ul class="ul-styled">
+            <li>
+              С самоотдачей на 146%
+            </li>
+            <li>
+              Соблюдая сроки на 100%
+            </li>
+            <li>
+              По предоплате 50%
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="index-links">
+      <ul class="links-ul">
+        <li>
+          <a href="#">
+            <img src="img/glukhanko.png" alt="glukhanco" width="198" height="37">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/htmlacademy.png" alt="htmlacademy" width="199" height="68">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/barbershop.png" alt="borodinski" width="209" height="90">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
 
-    <footer class="main-footer">
-        <div class="footer-map">
-            <div class="container clearfix">
-            </div>
+  <footer class="main-footer">
+    <div class="footer-map">
+      <div class="container clearfix">
+        <div class="footer-feedback">
+          <b>
+                        Nerds Design Studio
+                    </b>
+          <p>
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>
+            тел. +7(812) 275-75-75
+          </p>
+          <a class="btn" href="#">
+                        Напишите нам
+                    </a>
         </div>
-        <div class="container clearfix">
-            <div class="footer-social">
-            </div>
-            <div class="footer-discounts">
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <div class="footer-social">
+        <a class="social-vk" href="#">
+        </a>
+        <a class="social-facebook" href="#">
+        </a>
+        <a class="social-nstagram" href="#">
+        </a>
+      </div>
+      <div class="footer-discounts">
+        <p class="head">
+          Давайте дружить, это выгодно!
+        </p>
+        <p>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
