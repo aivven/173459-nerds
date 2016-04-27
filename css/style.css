@@ -29,9 +29,6 @@ h2 {
 }
 
 
-.main-header {
-    margin-bottom: 80px;
-}
 
 .clearfix::after {
   content: "";
@@ -42,6 +39,7 @@ h2 {
 
 .container {
     width: 880px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -52,7 +50,7 @@ h2 {
 
 .main-navigation {
     float: left;
-    width: 400px;
+    width: 560px;
 }
 
 .btn-cart {
@@ -60,18 +58,33 @@ h2 {
     width: 100px;
 }
 
-.slider, .index-services, .index-about, .about-top, .about-bottom, .index-links, .footer-map  {
+.slider {
     display: inline-block;
+}
+
+
+.main-header, .index-services {
+    margin-bottom: 80px
 }
 
 .services-block {
     float: left;
     width: 240px;
+    margin-left: 80px;
+}
+
+.services-block:last-child {
+    margin-left: 0;
+}
+
+.index-about {
+    padding-top: 60px;
+    padding-bottom: 70px;
 }
 
 .left {
     float: left;
-    width: 590px;    
+    width: 620px;    
 }
 
 .right {
@@ -79,12 +92,20 @@ h2 {
     width: 240px;
 }
 
+.main-footer {
+    margin-top: 80px;
+}
+
 .footer-social {
     float: left;
     width: 240px;
+    padding-top: 77px 0;
+    padding-bottom: 77px 0;
 }
 
 .footer-discounts {
     float: right;
     width: 580px;
+    padding-top: 77px 0;
+    padding-bottom: 77px 0;
 }
