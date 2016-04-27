@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-size: 16px;
     line-height: 22px;
@@ -20,4 +26,65 @@ h2 {
     color: #000000;
     font-weight: bold;
     font-family: "Roboto Medium";
+}
+
+
+.main-header {
+    margin-bottom: 80px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+    width: 880px;
+    margin: 0 auto;
+}
+
+.index-logo {
+    float: left;
+    width: 139px;
+}
+
+.main-navigation {
+    float: left;
+    width: 400px;
+}
+
+.btn-cart {
+    float: right;
+    width: 100px;
+}
+
+.slider, .index-services, .index-about, .about-top, .about-bottom, .index-links, .footer-map  {
+    display: inline-block;
+}
+
+.services-block {
+    float: left;
+    width: 240px;
+}
+
+.left {
+    float: left;
+    width: 590px;    
+}
+
+.right {
+    float: right;
+    width: 240px;
+}
+
+.footer-social {
+    float: left;
+    width: 240px;
+}
+
+.footer-discounts {
+    float: right;
+    width: 580px;
 }
