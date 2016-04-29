@@ -91,15 +91,11 @@ h2 {
   float: left;
   width: 240px;
   margin-right: 80px;
+  margin-bottom: 80px;
 }
 
 .services-block:nth-child(3n) {
   margin-right: 0;
-}
-
-.services-block::after {
-  content: "";
-  margin-bottom: 80px;
 }
 
 .index-about {
