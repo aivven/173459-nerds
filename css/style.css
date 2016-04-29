@@ -41,6 +41,10 @@ h2 {
   margin: 0 auto;
 }
 
+.main-header {
+  margin-bottom: 80px;
+}
+
 .main-header .container {
   padding-top: 27px;
 }
@@ -75,11 +79,6 @@ h2 {
   width: 100px;
 }
 
-.main-header,
-.index-services {
-  margin-bottom: 80px;
-}
-
 /*
 .services-block {
   display: inline-block;
@@ -96,6 +95,11 @@ h2 {
 
 .services-block:nth-child(3n) {
   margin-right: 0;
+}
+
+.services-block::after {
+  content: "";
+  margin-bottom: 80px;
 }
 
 .index-about {
