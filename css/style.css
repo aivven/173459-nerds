@@ -59,14 +59,18 @@ h2 {
   width: 560px;
 }
 
-.navigation-ul, .links-ul {
+.navigation-ul, .links-ul, .sort-ul, .pages-ul {
     margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
 
-.navigation-ul li {
+.sort-ul, .pages-ul {
+    font-size: 16px;
+}
+
+.navigation-ul li, .sort-ul li, .pages-ul li {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
@@ -87,14 +91,14 @@ h2 {
 }
 */
 
-.services-block {
+.services-block, .catalog-item {
   float: left;
   width: 240px;
   margin-right: 80px;
   margin-bottom: 80px;
 }
 
-.services-block:nth-child(3n) {
+.services-block:nth-child(3n), .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -152,6 +156,47 @@ h2 {
   float: right;
   width: 580px;
 }
+
+.header-topic {
+  margin-top: 74px;
+  margin-bottom: 94px;
+}
+
+.catalog-filter {
+  float: left;
+  width: 240px;
+}
+
+.catalog {
+  float: right;
+  width: 560px;
+}
+
+.catalog-sort span {
+  float: left;
+  width: 105px;
+}
+
+.catalog-sort .sort-ul {
+  float: left;
+  width: 375px;
+}
+
+.template-arrows {
+  float: right;
+  width: 28px;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.item-hidden {
+  position: absolute;
+}
+
+
+
 
 
 /*======================================
