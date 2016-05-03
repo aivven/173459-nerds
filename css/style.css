@@ -14,6 +14,8 @@ body {
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -22,6 +24,8 @@ h1 {
 }
 
 h2 {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -31,12 +35,19 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
+    font-size: 16px;
   line-height: 22px;
   color: #000000;
   font-weight: 500;
   font-family: 'Roboto', "Arial", sans-serif;
   text-transform:uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .head {
@@ -188,14 +199,19 @@ h3 {
     color: #283136;
 }
 .slide-title{
+  margin-bottom: 17px;
     font-size: 36px;
     line-height: 36px;
     font-weight: 500;
     color:black;
 }
+
+.slide p {
+    margin-bottom: 28px;
+}
+
 .slide .btn{
     width:240px;
-    margin-top:30px;
     background:#fb565a;
 }
 .slide:nth-child(1){
@@ -243,9 +259,20 @@ h3 {
   margin-right: 0;
 }
 
+.services-block img {
+  margin-bottom: 16px;
+}
+
+.services-block h2 {
+  margin-bottom: 15px;
+}
+
+.services-block p {
+  margin-bottom: 25px;
+}
+
 .services-block .btn {
-    width:140px;
-    margin-top:25px;
+    width: 140px;
 }
 
 .services-block:nth-child(1) .btn {
@@ -261,17 +288,18 @@ h3 {
 }
 
 .index-about {
-  padding-top: 60px;
+  padding-top: 58px;
   padding-bottom: 50px;
   font-size: 16px;
 }
 
  .about-top {
-   margin-bottom: 14px;
+   margin-bottom: 44px;
 }
 
 .about-top .head {
   margin-top: 12px;
+  margin-bottom: 18px;
 }
 
 .styled-ul {
@@ -280,7 +308,7 @@ h3 {
 
 .left {
   float: left;
-  width: 620px;
+  width: 580px;
 }
 
 .right {
@@ -289,13 +317,13 @@ h3 {
 }
 
 .about-bottom h3 {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .styled-ul li {
   position: relative;
   padding-left: 35px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .styled-ul li::before {
@@ -325,7 +353,7 @@ h3 {
 }
 
 .footer-map, .container:last-child {
-  margin-bottom: 77px;
+  margin-bottom: 74px;
 }
 
 .footer-map {
@@ -340,9 +368,10 @@ h3 {
 .footer-feedback {
   position: absolute;
   left: 10px;
-  top: 88px;
+  top: 87px;
   width: 204px;
-  padding: 29px 23px;
+  height: 184px;
+  padding: 28px 23px;
   background: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -350,7 +379,7 @@ h3 {
 }
 
 .footer-feedback h3 {
-  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .footer-feedback p {
@@ -358,7 +387,7 @@ h3 {
 }
 
 .footer-feedback .btn {
-  margin-top: 30px;
+  margin-top: 31px;
   background:#fb565a; 
 }
 
@@ -393,11 +422,10 @@ h3 {
 .footer-discounts {
   float: right;
   width: 560px;
-  margin-top: -37px;
 }
 
-.footer-discounts p:nth-child(2) {
-  margin-top: -27px;
+.footer-discounts .head {
+  margin-bottom: 10px;
 }
 
 .header-topic {
