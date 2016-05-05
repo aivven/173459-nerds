@@ -104,7 +104,12 @@ p {
   width: 450px;
 }
 
-.navigation-ul, .links-ul, .styled-ul, .sort-ul, .pages-ul, .filters {
+.navigation-ul,
+.links-ul,
+.styled-ul,
+.sort-ul,
+.pages-ul,
+.filters {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -118,7 +123,8 @@ p {
   margin: 0 22px;
 }
 
-.main-navigation a, .btn-cart a {
+.main-navigation a,
+.btn-cart a {
   padding-bottom: 4px;
   text-decoration: none;
   color: #283136;
@@ -129,11 +135,13 @@ p {
   font-family: 'Roboto', "Arial", sans-serif;
 }
 
-.main-navigation a:hover, .btn-cart a:hover {
+.main-navigation a:hover,
+.btn-cart a:hover {
   color: #fb565a;
 }
 
-.main-navigation a:active, .btn-cart a:active {
+.main-navigation a:active,
+.btn-cart a:active {
   color: #8f8f8f;
 }
 
@@ -421,7 +429,8 @@ p {
   margin-top: 85px;
 }
 
-.footer-map, .container:last-child {
+.footer-map,
+.container:last-child {
   margin-bottom: 74px;
 }
 
@@ -549,11 +558,13 @@ background: #fb565a;
   margin-bottom: 10px;
 }
 
+/*МАГАЗИН*/
+/*Хедер*/
 .header-topic {
-    padding-top: 22px;
-    padding-bottom: 84px;
-    text-transform: uppercase;
-    text-align: center;
+  padding-top: 22px;
+  padding-bottom: 84px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*Фильтр магазина*/
@@ -577,7 +588,16 @@ background: #fb565a;
   text-transform: uppercase;
 }
 
-/*Фильтр 1*/
+fieldset {
+  margin-bottom: 44px;
+}
+
+.fieldset-item input[type="radio"],
+.fieldset-item input[type="checkbox"] {
+  display: none;
+}
+
+/*Фильтр - Стоимость*/
 .filters fieldset {
   border: none;
 }
@@ -592,7 +612,7 @@ background: #fb565a;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   border-radius: 5px;
   background: #f1f1f1;
 }
@@ -647,14 +667,179 @@ background: #fb565a;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   width: 60px;
-  margin-left: 10px;
-  padding: 8px 10px;
+  margin-left: 6px;
+  padding: 4px 10px;
   text-align: center;
   color: #283136;
   border: none;
   border-radius: 5px;
   outline: none;
   background: #f1f1f1;
+}
+
+/*Фильтр - Сетка*/
+.fieldset-item {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.fieldset-item:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset-item label {
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.filter-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -187px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter-radio + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -292px;
+  opacity: 1;
+}
+
+.filter-radio:disabled + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -292px;
+  opacity: 0.3;
+}
+
+.filter-radio:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -222px;
+  opacity: 1;
+}
+
+.filter-radio:checked + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -257px;
+  opacity: 1;
+}
+
+.filter-radio:checked:disabled + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -257px;
+  opacity: 0.3;
+}
+
+/*Фильтр - Особенности*/
+.filter-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -55px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter-checkbox + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -88px;
+  opacity: 1;
+}
+
+.filter-checkbox:disabled + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -88px;
+  opacity: 0.3;
+}
+
+.filter-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -121px;
+  opacity: 1;
+}
+
+.filter-checkbox:checked + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -154px;
+  opacity: 1;
+}
+
+.filter-checkbox:checked:disabled + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -154px;
+  opacity: 0.3;
 }
 
 /*Каталог*/
