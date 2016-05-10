@@ -4,11 +4,13 @@
     display: block;
 }
 
+
 .sprite--icon-basket {
     width: 15px;
     height: 15px;
     background-position: -5px -5px;
 }
+
 
 .sprite--icon-basket-hover {
     width: 15px;
@@ -16,11 +18,13 @@
     background-position: -5px -30px;
 }
 
+
 .sprite--icon-check-off {
     width: 23px;
     height: 23px;
     background-position: -5px -55px;
 }
+
 
 .sprite--icon-check-off-hover {
     width: 23px;
@@ -28,11 +32,13 @@
     background-position: -5px -88px;
 }
 
+
 .sprite--icon-check-on {
     width: 27px;
     height: 23px;
     background-position: -5px -121px;
 }
+
 
 .sprite--icon-check-on-hover {
     width: 27px;
@@ -40,11 +46,13 @@
     background-position: -5px -154px;
 }
 
+
 .sprite--icon-circle {
     width: 25px;
     height: 25px;
     background-position: -5px -187px;
 }
+
 
 .sprite--icon-circle-dot {
     width: 25px;
@@ -52,11 +60,13 @@
     background-position: -5px -222px;
 }
 
+
 .sprite--icon-circle-dot-hover {
     width: 25px;
     height: 25px;
     background-position: -5px -257px;
 }
+
 
 .sprite--icon-circle-hover {
     width: 25px;
@@ -64,11 +74,13 @@
     background-position: -5px -292px;
 }
 
+
 .sprite--icon-facebook {
     width: 12px;
     height: 22px;
     background-position: -5px -327px;
 }
+
 
 .sprite--icon-instagramm {
     width: 21px;
@@ -76,17 +88,20 @@
     background-position: -5px -359px;
 }
 
+
 .sprite--icon-up-dir {
     width: 11px;
     height: 10px;
     background-position: -5px -390px;
 }
 
+
 .sprite--icon-up-dir-active {
     width: 11px;
     height: 10px;
     background-position: -5px -410px;
 }
+
 
 .sprite--icon-vk {
     width: 26px;
