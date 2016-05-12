@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nёrds - Магазин</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,12 +15,14 @@
     <div class="container">
       <div class="clearfix">
         <div class="index-logo">
+         <a href="index.html">
           <img src="img/index-logo.png" alt="Nerd's" width="139" height="56">
+          </a>
         </div>
         <nav class="main-navigation">
           <ul class="navigation-ul">
             <li>
-              <a href="#">
+              <a href="index.html">
                 Студия 
               </a>
             </li>
@@ -149,7 +151,7 @@
           <li><a href="#">По функционалу</a></li>
         </ul>
         <div class="template-arrows">
-          <a class="arrow-button" href="#"></a>
+          <a class="active-arrow" href="#"></a>
           <a class="arrow-top" href="#"></a>
         </div>
       </div>
@@ -163,14 +165,14 @@
             <div class="circle">
                     </div>
           </div>
-          <div class="image">
+          <div class="item-image">
           <div class="item-hidden">
             <div class="item-head">
-              Aviator
-            </div>
-            <p>
+              <a href="#">Aviator</a> 
+              <p>
               Одностраничный макет с авторским дизайном
             </p>
+            </div>
             <a class="btn" href="#">
                             8000 р.
                         </a>
@@ -187,14 +189,14 @@
             <div class="circle">
                     </div>
           </div>
-          <div class="image">
+          <div class="item-image">
           <div class="item-hidden">
             <div class="item-head">
-              Sunset
-            </div>
-            <p>
+              <a href="#">Sunset</a> 
+                        <p>
               Интернет-магазин с личным кабинетом
             </p>
+            </div>
             <a class="btn" href="#">
                             10000 р.
                         </a>
@@ -211,14 +213,14 @@
             <div class="circle">
                     </div>
           </div>
-          <div class="image">
+          <div class="item-image">
           <div class="item-hidden">
             <div class="item-head">
-              Forte
-            </div>
-            <p>
+              <a href="#">Forte</a> 
+                        <p>
               Отличный макет для личного блога
             </p>
+            </div>
             <a class="btn" href="#">
                             5000 р.
                         </a>
@@ -235,14 +237,14 @@
             <div class="circle">
                     </div>
           </div>
-          <div class="image">
+          <div class="item-image">
           <div class="item-hidden">
             <div class="item-head">
-              Modern Organic Thai
-            </div>
-            <p>
+              <a href="#">Modern Organic Thai</a> 
+                        <p>
               Сайт для ресторана быстрого питания
             </p>
+            </div>
             <a class="btn" href="#">
                             12000 р.
                         </a>
@@ -259,14 +261,14 @@
             <div class="circle">
                     </div>
           </div>
-          <div class="image">
+          <div class="item-image">
           <div class="item-hidden">
             <div class="item-head">
-              Avenue
-            </div>
-            <p>
+              <a href="#">Avenue</a>
+                        <p>
               Макет для блога  о путешествиях
             </p>
+            </div>
             <a class="btn" href="#">
                             8000 р.
                         </a>
@@ -283,14 +285,14 @@
             <div class="circle">
                     </div>
           </div>
-          <div class="image">
+          <div class="item-image">
           <div class="item-hidden">
             <div class="item-head">
-              Dovetail
-            </div>
-            <p>
+              <a href="#">Dovetail</a>
+                        <p>
               Интернет-магазин с галереей товаров
             </p>
+            </div>
             <a class="btn" href="#">
                             14000 р.
                         </a>
@@ -318,7 +320,7 @@
                         </a>
           </li>
           <li>
-            <a class="next" href="#">
+            <a class="pages-next" href="#">
                             Следующая
                         </a>
           </li>
@@ -366,26 +368,32 @@
     </div>
   </footer>
 
-  <div class="modal-content modal-content-show">
+  <div class="modal-content">
     <button class="modal-content-close">
     </button>
     <form class="form" action="#" method="post">
+     <div class="modal-data">
       <label for="name">
         Ваше имя:
       </label>
       <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
-      <label for="e-mail">
+      </div>
+      <div class="modal-data">
+       <label for="e-mail">
         Ваш e-mail:
       </label>
       <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
-      <label for="text">
+      </div>
+       <label for="text">
         Текст письма:
       </label>
-      <textarea class="letter" id="text" rows="6" placeholder="В свободной форме">
+      <textarea class="letter" name="text" id="text"  rows="5" placeholder="В свободной форме">
       </textarea>
       <input class="btn" type="submit" value="Отправить">
     </form>
   </div>
+  
+<script src="js/modal-window.js"></script>
 
 </body>
 

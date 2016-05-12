@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nёrds</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -30,7 +30,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 Магазин
               </a>
             </li>
@@ -68,7 +68,7 @@
             <div class="slide-text">
               <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
               <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-              <a class="btn" href="#">Узнать больше</a>
+              <a class="slide-btn" href="#">Узнать больше</a>
             </div>
           </div>
           <div class="slide">
@@ -232,26 +232,32 @@
     </div>
   </footer>
 
-  <div class="modal-content modal-content-show">
+  <div class="modal-content">
     <button class="modal-content-close">
     </button>
     <form class="form" action="#" method="post">
+     <div class="modal-data">
       <label for="name">
         Ваше имя:
       </label>
       <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
-      <label for="e-mail">
+      </div>
+      <div class="modal-data">
+       <label for="e-mail">
         Ваш e-mail:
       </label>
       <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
-      <label for="text">
+      </div>
+       <label for="text">
         Текст письма:
       </label>
-      <textarea class="letter" id="text" rows="6" placeholder="В свободной форме">
+      <textarea class="letter" name="text" id="text"  rows="5" placeholder="В свободной форме">
       </textarea>
       <input class="btn" type="submit" value="Отправить">
     </form>
   </div>
+  
+<script src="js/modal-window.js"></script>
 
 </body>
 

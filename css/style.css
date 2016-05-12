@@ -1,56 +1,43 @@
 /*Общие стили*/
 
-html {
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic);
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   color: #283136;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 h1 {
-  margin: 0;
-  padding: 0;
   font-size: 40px;
   line-height: 48px;
   color: #000000;
   font-weight: 500;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 h2 {
-  margin: 0;
-  padding: 0;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   font-weight: 500;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
 h3 {
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
   font-weight: 500;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
-}
-
-p,
-span {
-  margin: 0;
-  padding: 0;
 }
 
 .head {
@@ -145,7 +132,7 @@ span {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .main-navigation a:hover,
@@ -165,7 +152,6 @@ span {
 .user-blok {
   float: right;
   padding-top: 27px;
-  padding-bottom: 43px;
 }
 
 .btn-cart {
@@ -221,11 +207,12 @@ span {
   width: 880px;
   height: 310px;
   margin: 0 auto;
+  margin-top: 38px;
+  background: #eeeeee;
 }
 
 .slider input[type=radio] {
-  position: absolute;
-  opacity: 0;
+  display:none;
 }
 
 .slider-controls {
@@ -294,19 +281,19 @@ span {
 }
 
 .slide:nth-child(1) {
-  background-image: url('../img/slade-one.png');
+  background-image: url("../img/slade-one.png");
   background-repeat: no-repeat;
   background-position: 100% 10px;
 }
 
 .slide:nth-child(2) {
-  background-image: url('../img/slade-two.png');
+  background-image: url("../img/slade-two.png");
   background-repeat: no-repeat;
   background-position: 100% 10px;
 }
 
 .slide:nth-child(3) {
-  background-image: url('../img/slade-three.png');
+  background-image: url("../img/slade-three.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
@@ -426,7 +413,7 @@ span {
 }
 
 .styled-ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -472,13 +459,13 @@ span {
 }
 
 .footer-map,
-.container:last-child {
+.main-footer {
   margin-bottom: 74px;
 }
 
 .footer-map {
   height: 416px;
-  background: url('../img/map.jpg') center no-repeat;
+  background: url("../img/map.jpg") center no-repeat;
 }
 
 .footer-map .container {
@@ -513,10 +500,6 @@ span {
 
 .footer-feedback .btn:hover {
   background: #d6494d;
-}
-
-.modal-content {
-  display: none;
 }
 
 .footer-social {
@@ -612,8 +595,8 @@ span {
 /*Хедер*/
 
 .header-topic {
-  padding-top: 22px;
-  padding-bottom: 84px;
+  padding-top: 32px;
+    padding-bottom: 57px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -719,7 +702,7 @@ fieldset {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   width: 60px;
   margin-left: 6px;
@@ -1019,24 +1002,46 @@ fieldset {
   opacity: 0.4;
 }
 
-.arrow-button:active::before,
-.arrow-top:active::before {
-  opacity: 1;
-}
-
-
-/*.active-arrow {
+.active-arrow:hover::before {
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
   width: 11px;
   height: 10px;
   background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -430px;
+  background-position: -5px -390px;
+  opacity: 0.4;
+}
+
+.arrow-button:active::before,
+.arrow-top:active::before {
   opacity: 1;
 }
 
-Реализация через js???*/
+.active-arrow:active::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 11px;
+  height: 10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -390px;
+  opacity: 1;
+}
+
+.active-arrow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 11px;
+  height: 10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -410px;
+  opacity: 1;
+  transform: rotate(180deg);
+}
 
 .catalog-list {
   font-size: 0;
@@ -1069,7 +1074,7 @@ fieldset {
   border-top-right-radius: 3px;
 }
 
-.item-top:hover {
+.catalog-item:hover .item-top {
   background: #797979;
 }
 
@@ -1082,7 +1087,12 @@ fieldset {
   border-radius: 50%;
 }
 
-.image {
+.item-head a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.item-image {
   position: relative;
 }
 
@@ -1092,6 +1102,7 @@ fieldset {
   left: 50%;
   top: 20px;
   width: 160px;
+  height: 148px;
   margin-left: -100px;
   padding-top: 32px;
   padding-bottom: 30px;
@@ -1100,7 +1111,14 @@ fieldset {
   background-color: #fff;
 }
 
-.item-hidden .item-head {
+.item-head {
+  min-height: 65px;
+  overflow:hidden;
+}
+
+.item-head a {
+  display: block;
+  min-height: 14px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 14px;
@@ -1112,7 +1130,7 @@ fieldset {
   text-decoration: none;
 }
 
-.item-hidden p {
+.item-head p {
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
@@ -1171,11 +1189,157 @@ fieldset {
   border-radius: 3px;
 }
 
-.pages-active {
+.pages-ul a.pages-active {
   background-color: #ffffff;
   border: 2px solid #f2f2f2;
 }
 
-.next{
+.pages-next {
   padding: 0 28px;
+}
+
+
+/*Модальное окно*/
+
+.modal-content {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	display: none;
+	width: 460px;
+	height: 311px;
+	padding-top: 56px;
+    padding-bottom: 49px;
+    padding-left: 80px;
+    padding-right: 90px;
+	margin-left: -315px;
+	margin-top: -250px;
+	background-color: #ffffff;
+	box-shadow: 0 10px 50px 0px #000000;
+	z-index: 2000;
+}
+
+.modal-content-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+	0% {transform: translateY(-2000px);}
+	70% {transform: translateY(30px);}
+	90% {transform: translateY(-10px);}
+	100% {transform: translateY(0px);}
+}
+
+.modal-error {
+	animation: shake 0.6s;
+}
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.modal-content-close {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+	background-color: #fb565a;
+	border-radius: 50%;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+	content: "";
+	position: absolute;
+	top: 18px;
+	left: 8px;
+	width: 25px;
+	height: 4px;
+	background-color: #ffffff;
+	border-radius: 1px;
+}
+
+.modal-content-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+	transform: rotate(-45deg);
+}
+
+.form {
+	width: 460px;
+}
+
+.modal-data {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	width: 220px;
+    margin-bottom: 18px;
+}
+
+.modal-data:first-child {
+	margin-right: 16px;
+}
+
+.modal-content label {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.letter {
+  min-height: 120px;
+  margin-top: 7px;
+}
+
+.modal-content input[type="text"], .letter {
+	width: 185px;
+	padding: 8px 15px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	text-transform: uppercase;
+	border: 2px solid #d7dcde;
+    border-radius: 2px;
+    box-decoration-break: none;
+}
+
+.modal-content input[type="text"]:hover, .letter:hover {
+	border: 2px solid #a2a9ac;
+}
+
+.modal-content input[type="text"]:focus, .letter:focus {
+	border: 2px solid #56bffb;
+}
+
+.letter {
+	width: 426px;
+	min-height: 76px;
+}
+
+.modal-content .btn {
+	width: 100%;
+	margin-top: 47px;
+	background-color: #fb565a;
+	border: none;
+	outline: none;
+}
+
+.modal-content .btn:hover {
+	border: 0;
+	background-color: #d6494d;
+}
+
+.modal-content .btn:active {
+	border: 0;
+	background-color: #b63538;
+	box-shadow: inset 0 2px 0 0 #9b2d30;
 }
