@@ -1,13 +1,8 @@
 /*Общие стили*/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic);
-
-* {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   color: #283136;
   font-size: 16px;
   line-height: 22px;
@@ -16,6 +11,8 @@ body {
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
   font-size: 40px;
   line-height: 48px;
   color: #000000;
@@ -24,6 +21,8 @@ h1 {
 }
 
 h2 {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -33,6 +32,8 @@ h2 {
 }
 
 h3 {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
@@ -40,8 +41,18 @@ h3 {
   font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
 }
+p,
+spane,
+li,
+div,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 .head {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 36px;
 }
@@ -77,6 +88,8 @@ h3 {
 .index-services,
 .index-about,
 .index-links {
+  margin: 0;
+  padding: 0;
   font-size: 0;
   border-bottom: 2px solid #eeeeee;
 }
@@ -474,10 +487,10 @@ h3 {
 .footer-feedback {
   position: absolute;
   left: 10px;
-  top: 87px;
+  top: 88px;
   width: 204px;
   height: 184px;
-  padding: 28px 23px;
+  padding: 29px 23px;
   background: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -595,8 +608,8 @@ h3 {
 /*Хедер*/
 
 .header-topic {
-  padding-top: 32px;
-    padding-bottom: 57px;
+  padding-top: 58px;
+    padding-bottom: 86px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1064,6 +1077,10 @@ fieldset {
 
 /*Блоки товаров*/
 
+.catalog-item {
+  position: relative;
+}
+
 .item-top {
   height: 10px;
   padding-top: 10px;
@@ -1087,17 +1104,13 @@ fieldset {
   border-radius: 50%;
 }
 
-.catalog-item {
-  position: relative;
-}
-
 .item-hidden {
   /*display: none;*/
   position: absolute;
   left: 50%;
   top: 50px;
   width: 160px;
-  height: 148px;
+  height: 138px;
   margin-left: -100px;
   padding-top: 32px;
   padding-bottom: 30px;
@@ -1106,12 +1119,16 @@ fieldset {
   background-color: #ffffff;
 }
 
+.item-text {
+  height: 96px;
+  overflow:hidden;
+}
+
 .item-hidden a {
   display: block;
-  min-height: 14px;
+  min-height: 37px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 14px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -1127,6 +1144,7 @@ fieldset {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  vertical-align: bottom;
 }
 
 .item-hidden .btn {
