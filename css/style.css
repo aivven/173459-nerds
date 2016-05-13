@@ -595,6 +595,7 @@ ul {
 .footer-discounts {
   float: right;
   width: 560px;
+  margin-top: 2px;
 }
 
 .footer-discounts .head {
@@ -693,11 +694,11 @@ fieldset {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -925,6 +926,7 @@ fieldset {
 .catalog {
   float: right;
   width: 560px;
+  margin-bottom: -5px;
 }
 
 
@@ -1010,6 +1012,19 @@ fieldset {
   opacity: 0.3;
 }
 
+.active-arrow::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 11px;
+  height: 10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -5px -410px;
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
 .arrow-button:hover::before,
 .arrow-top:hover::before {
   opacity: 0.4;
@@ -1042,18 +1057,6 @@ fieldset {
   background: transparent url("../img/spritesheet.png") no-repeat;
   background-position: -5px -390px;
   opacity: 1;
-}
-
-.active-arrow {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 11px;
-  height: 10px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -410px;
-  opacity: 1;
-  transform: rotate(180deg);
 }
 
 .catalog-list {
@@ -1124,7 +1127,7 @@ fieldset {
   overflow:hidden;
 }
 
-.item-hidden a {
+.item-hidden a:first-child {
   display: block;
   min-height: 37px;
   margin-left: auto;
@@ -1148,11 +1151,12 @@ fieldset {
 }
 
 .item-hidden .btn {
-  width: 140px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
-  line-height: 24px;
+    width: 140px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 18px;
   background-color: #fb565a;
   color: #ffffff;
 }
