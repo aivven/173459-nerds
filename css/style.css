@@ -1,6 +1,7 @@
 /*Общие стили*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic);
+
 * {
   margin: 0;
   padding: 0;
@@ -110,8 +111,6 @@ h3 {
 .sort-ul,
 .pages-ul,
 .filters {
-  margin: 0;
-  padding: 0;
   list-style: none;
   font-size: 0;
 }
@@ -455,7 +454,7 @@ h3 {
 /*Футер*/
 
 .main-footer {
-  margin-top: 85px;
+  margin-top: 82px;
 }
 
 .footer-map,
@@ -506,6 +505,7 @@ h3 {
   float: left;
   width: 240px;
   margin: 0;
+  margin-top: 5px;
   padding: 0;
   text-align: center;
 }
@@ -1087,12 +1087,7 @@ fieldset {
   border-radius: 50%;
 }
 
-.item-head a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.item-image {
+.catalog-item {
   position: relative;
 }
 
@@ -1100,7 +1095,7 @@ fieldset {
   /*display: none;*/
   position: absolute;
   left: 50%;
-  top: 20px;
+  top: 50px;
   width: 160px;
   height: 148px;
   margin-left: -100px;
@@ -1108,15 +1103,10 @@ fieldset {
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
-.item-head {
-  min-height: 65px;
-  overflow:hidden;
-}
-
-.item-head a {
+.item-hidden a {
   display: block;
   min-height: 14px;
   margin-left: auto;
@@ -1126,11 +1116,11 @@ fieldset {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
-.item-head p {
+.item-hidden p {
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
@@ -1146,6 +1136,7 @@ fieldset {
   font-size: 18px;
   line-height: 24px;
   background-color: #fb565a;
+  color: #ffffff;
 }
 
 .item-hidden .btn:hover {
@@ -1180,7 +1171,6 @@ fieldset {
   vertical-align: top;
   min-width: 35px;
   height: 25px;
-  margin-bottom: 8px;
   padding-top: 8px;
   color: #000000;
   background-color: #f1f1f1;

@@ -1,7 +1,8 @@
+
 var link = document.querySelector(".footer-feedback .btn");
 var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-content-close");
-var form = popup.querySelector(".modal-content");
+var form = popup.querySelector(".modal-content form");
 var author = popup.querySelector("[name=writer-name]");
 var mail = popup.querySelector("[name=writer-email]");
 var text = popup.querySelector("[name=writer-text]");
@@ -28,8 +29,6 @@ form.addEventListener("submit", function(event){
   popup.classList.remove("modal-error"); 
  }
 });
-
-
 
 window.addEventListener("keydown", function(event) {
  if (event.keyCode === 27) {
