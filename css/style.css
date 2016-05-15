@@ -345,6 +345,7 @@ ul {
 }
 
 .services-block img {
+  max-width: 240px;
   margin-bottom: 16px;
 }
 
@@ -454,6 +455,7 @@ ul {
 }
 
 .link-ul img {
+  max-width: 220px;
   vertical-align: middle;
 }
 
@@ -1110,6 +1112,10 @@ fieldset {
   background: #797979;
 }
 
+.catalog-item img {
+  max-width: 240px;
+}
+
 .circle {
   float: left;
   height: 10px;
@@ -1291,57 +1297,6 @@ fieldset {
   }
 }
 
-.modal-error {
-  -webkit-animation: shake 0.6s;
-  animation: shake 0.6s;
-}
-
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-}
-
 .modal-content-close {
   position: absolute;
   top: 6px;
@@ -1451,6 +1406,7 @@ fieldset {
   background: #fb565a;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .modal-content .btn:hover {
