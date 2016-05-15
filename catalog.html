@@ -6,7 +6,7 @@
   <title>Nёrds - Магазин</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -184,7 +184,7 @@
               8000 р.
             </a>
           </div>
-          <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
+          <img src="img/aviator.jpg" alt="Aviator" max-width="240" height="240">
         </div>
         <div class="catalog-item">
           <div class="item-top">
@@ -208,7 +208,7 @@
               10000 р.
             </a>
           </div>
-          <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
+          <img src="img/sunset.jpg" alt="Sunset" max-width="240" height="240">
         </div>
         <div class="catalog-item">
           <div class="item-top">
@@ -232,7 +232,7 @@
               5000 р.
             </a>
           </div>
-          <img src="img/forte.jpg" alt="Forte" width="240" height="240">
+          <img src="img/forte.jpg" alt="Forte" max-width="240" height="240">
         </div>
         <div class="catalog-item">
           <div class="item-top">
@@ -256,7 +256,7 @@
               12000 р.
             </a>
           </div>
-          <img src="img/modern.jpg" alt="Modern Organic Thai" width="240" height="240">
+          <img src="img/modern.jpg" alt="Modern Organic Thai" max-width="240" height="240">
         </div>
         <div class="catalog-item">
           <div class="item-top">
@@ -280,7 +280,7 @@
               8000 р.
             </a>
           </div>
-          <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
+          <img src="img/avenue.jpg" alt="Avenue" max-width="240" height="240">
         </div>
         <div class="catalog-item">
           <div class="item-top">
@@ -304,7 +304,7 @@
               14000 р.
             </a>
           </div>
-          <img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
+          <img src="img/dovetail.jpg" alt="Dovetail" max-width="240" height="240">
         </div>
       </div>
       <div class="catalog-pages">
@@ -336,6 +336,9 @@
 
   <footer class="main-footer">
     <div class="footer-map">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241241!2d30.320894616206612!3d59.93879686904772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463299020091" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <div class="container">
         <div class="footer-feedback">
           <h3>
@@ -381,24 +384,23 @@
         <label for="name">
           Ваше имя:
         </label>
-        <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста" required="">
+        <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="modal-data">
         <label for="e-mail">
           Ваш e-mail:
         </label>
-        <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required="">
+        <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
       </div>
       <label for="text">
         Текст письма:
       </label>
-      <textarea class="letter" name="text" id="text" rows="5" placeholder="В свободной форме">
-      </textarea>
+      <textarea class="letter" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
       <input class="btn" type="submit" value="Отправить">
     </form>
   </div>
 
-  <script src="js/modal-window.min.js"></script>
+  <script src="js/modal-window.js"></script>
 
 </body>
 
