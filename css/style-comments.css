@@ -1,0 +1,221 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  font-weight: bold;
+  font-family: "Roboto Medium";
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Roboto Medium";
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Roboto Medium";
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.main-header .container {
+  padding-top: 27px;
+}
+
+.index-logo {
+  float: left;
+  width: 139px;
+}
+
+.main-navigation {
+  float: left;
+  width: 560px;
+}
+
+.navigation-ul, .links-ul, .sort-ul, .pages-ul {
+    margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+/*не понимаю зачем здесь этот стиль. сначала обнуляешь, всё верно, у контейнера, а потом у строчно-блочных элементов выставляешь размер шрифта, что ты и сделала. а эти строчки бесполезны.*/
+.sort-ul, .pages-ul {
+    font-size: 16px;
+}
+
+.navigation-ul li, .sort-ul li, .pages-ul li { /*эти стили тоже нужно разнести, абсолютно не связанные друг с другом элементы, поменяешь для одного, изменятся для всех. экономить пространство в файле стилей надо, но не в ущерб практичности.*/
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 23px;
+}
+/*про пэйджинг в каталоге:
+если посмотреть, то там квадраты с числами одинакового размера, у них одинаковый правый отступ. у слова Следующая - паддинки справа и слева.
+а при твоей реализации посмотри как получатся квадраты:*/
+.pages-ul li{
+  border: 1px solid red;
+}
+/*но если сделать так (раскомменти, чтобы посмотреть):*/
+/*.pages-ul li{
+  width: 20px;
+  margin: 0;
+  margin-right: 10px;
+  text-align: center;
+}
+.pages-ul li:last-child{
+  width: auto;
+  padding: 0 15px;
+}*/
+/*и не будет отступа слева у первого элемента (его нет на макете)*/
+
+.btn-cart {
+  float: right;
+  width: 100px;
+}
+
+.index-services{
+    font-size: 0;
+}
+.services-block__new {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 240px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+  
+    font-size: 16px;
+}
+.services-block__new:nth-child(3n){
+  margin-right: 0;
+}
+
+.index-about {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.left {
+  float: left;
+  width: 620px;
+}
+
+.right {
+  float: right;
+  width: 240px;
+}
+
+/*не понимаю зачем ты здесь прописывешь margin: 0 auto;
+чтобы пользоваться этим приёмом, у тебя должна быть задана ширина элемента и границы родительского элемента, внутри которого происходит выравнивание по центру. пример можешь посмотреть с services-block__new.
+В данном же контексте оно бесполезно.*/
+.links-ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+
+  /*здесь же, если хочешь сделать выравнивание, учитывая, что внутри у тебя строчные элементы, ссылки и картинки, можно просто сделать:*/
+  width: 290px;
+  text-align: center;
+}
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.footer-map, .container:last-child {
+  margin-bottom: 77px;
+}
+
+.footer-map {
+  height: 416px;
+  background: url('../img/map.jpg') center no-repeat;
+}
+
+.footer-map .container {
+  position: relative;
+}
+
+.footer-feedback {
+  position: absolute;
+  left: 0;
+  top: 88px;
+  width: 250px;
+}
+
+.footer-social {
+  float: left;
+  width: 240px;
+}
+
+.footer-discounts {
+  float: right;
+  width: 580px;
+}
+
+.header-topic {
+  margin-top: 74px;
+  margin-bottom: 94px;
+}
+
+.catalog-filter {
+  float: left;
+  width: 240px;
+}
+
+.catalog {
+  float: right;
+  width: 560px;
+}
+
+.catalog-sort span {
+  float: left;
+  width: 105px;
+}
+
+.catalog-sort .sort-ul {
+  float: left;
+  width: 375px;
+}
+
+.template-arrows {
+  float: right;
+  width: 28px;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.item-hidden {
+  position: absolute;
+}
+
